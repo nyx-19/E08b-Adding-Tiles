@@ -9,6 +9,6 @@ func _physics_process(delta):
     for body in bodies:
         if body.is_in_group("Tiles"):
             body.queue_free()
-
+    
     if position.y > get_viewport_rect().end.y:
         queue_free()
